@@ -1,0 +1,14 @@
+name: Ola Mundo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  saudacao:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Diz ola
+        run: echo "Ola GitHub Actions!"
+      - name: Mostra a data
+        run: date
